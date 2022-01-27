@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#container {
+	display: flex;
+}
+
+#sidebar {
+	width: 200px;
+	padding: 10px;
+	/* display: none; */
+	border-right: 1px solid red;
+}
+
+#sidebar-list {
+	margin-top: 10px;
+}
+
+#sidebar-list p {
+	padding: 8px;
+}
+#sidebar-list p span {
+	margin-right: 10px;
+}
+
+#sidebar-list p:hover {
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+
+#main {
+	height: 100vh;
+	flex-grow: 1;
+}
+
+#header {
+	padding: 10px;
+	background-color: rgb(98, 0, 238);
+	color: white;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+#header span {
+	margin-right: 20px;
+}
