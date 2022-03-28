@@ -1,0 +1,19 @@
+Why promises?
+While using CallBacks you can encounter something called the pyramid of doom/Callback hell.
+(Async function calling another async function and so on)
+When you have a Cb inside another Cb and one Cb inside that and so on, it also
+becomes difficult to visualize it easily in the code structure
+
+getA(){
+    doX();
+    doY();
+    getB(data => {
+        doX();
+        doY();
+        getC(data => {
+            .......
+            .......
+        })
+    })
+
+} 
